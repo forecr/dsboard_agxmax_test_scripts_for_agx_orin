@@ -15,9 +15,13 @@ sudo modprobe mttcan
 sudo ip link set can0 type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on
 #sudo ip link set can1 type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on
 sudo ip link set up can0
-sudo ip link set up can1
+#sudo ip link set up can1
+
+trap interrupt_func INT
+interrupt_func() {
+	sudo ip link set can0 down
+	#sudo ip link set can1 down
+}
 
 candump can0
 
-sudo ip link set can0 down
-#sudo ip link set can1 down
