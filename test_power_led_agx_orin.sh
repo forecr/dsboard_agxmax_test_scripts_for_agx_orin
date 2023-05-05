@@ -46,12 +46,12 @@ sudo echo 0 > /sys/class/gpio/PZ.02/value
 sleep $sleep_time
 
 echo "step: 5/14"
-echo "POWER_LED1 ON"
+echo "POWER_LED2 ON"
 sudo echo 1 > /sys/class/gpio/PL.03/value
 sleep $sleep_time
 
 echo "step: 6/14"
-echo "POWER_LED1 OFF"
+echo "POWER_LED2 OFF"
 sudo echo 0 > /sys/class/gpio/PL.03/value
 sleep $sleep_time
 
@@ -71,29 +71,29 @@ sudo echo 0 > /sys/class/gpio/PZ.02/value
 sleep $sleep_time
 
 echo "step: 9/14"
-echo "POWER_LED0 ON"
 echo "POWER_LED1 ON"
+echo "POWER_LED2 ON"
 sudo echo 1 > /sys/class/gpio/PZ.02/value
 sudo echo 1 > /sys/class/gpio/PL.03/value
 sleep $sleep_time
 
 echo "step: 10/14"
-echo "POWER_LED0 OFF"
 echo "POWER_LED1 OFF"
+echo "POWER_LED2 OFF"
 sudo echo 0 > /sys/class/gpio/PZ.02/value
 sudo echo 0 > /sys/class/gpio/PL.03/value
 sleep $sleep_time
 
 echo "step: 11/14"
 echo "POWER_LED0 ON"
-echo "POWER_LED1 ON"
+echo "POWER_LED2 ON"
 sudo echo 1 > /sys/class/gpio/PEE.02/value
 sudo echo 1 > /sys/class/gpio/PL.03/value
 sleep $sleep_time
 
 echo "step: 12/14"
 echo "POWER_LED0 OFF"
-echo "POWER_LED1 OFF"
+echo "POWER_LED2 OFF"
 sudo echo 0 > /sys/class/gpio/PEE.02/value
 sudo echo 0 > /sys/class/gpio/PL.03/value
 sleep $sleep_time
