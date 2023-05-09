@@ -85,7 +85,7 @@ function test_menu {
 		echo "4) Local Network Test (iperf3)"
 		echo "5) Public Network Test (ping)"
 		echo "6) USB Test"
-		echo "7) M.2 Key-E Test" 
+		echo "7) WiFi Detect Test" 
 		echo "8) M.2 Key-B Test" 
 		echo "9) RS-232 Test"
 		echo "10) RS-422 Test"
@@ -138,7 +138,7 @@ function test_menu {
 				gnome-terminal -- watch -n 0.1 lsusb
 				;;
 			7 )
-				echo "M.2 Key-E Test"
+				echo "WiFi Detect Test"
 				gnome-terminal -- watch -n 0.1 lsusb
 				;;
 			8 )
