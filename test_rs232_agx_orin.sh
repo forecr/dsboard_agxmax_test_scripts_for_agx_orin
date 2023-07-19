@@ -18,4 +18,6 @@ sudo gtkterm -p /dev/ttyTHS4 -s 115200
 
 sudo echo 485 > /sys/class/gpio/unexport
 sudo echo 344 > /sys/class/gpio/unexport 
+sudo echo 428 > /sys/class/gpio/unexport
+sudo echo 433 > /sys/class/gpio/unexport
 
