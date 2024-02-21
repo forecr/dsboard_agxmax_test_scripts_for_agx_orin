@@ -21,6 +21,7 @@ trap interrupt_func INT
 interrupt_func() {
 	sudo ip link set can0 down
 	#sudo ip link set can1 down
+	read -p 'Press [Enter] to exit' quit_key
 }
 
 cangen can0 -v
