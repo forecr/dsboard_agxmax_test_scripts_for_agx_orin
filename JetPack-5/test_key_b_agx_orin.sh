@@ -16,6 +16,7 @@ trap interrupt_func INT
 interrupt_func() {
 	sudo echo high > /sys/class/gpio/PX.06/direction
 
+	sudo echo 468 > /sys/class/gpio/unexport
 	#sudo echo 446 > /sys/class/gpio/unexport
 	sudo echo 349 > /sys/class/gpio/unexport
 	#sudo echo 350 > /sys/class/gpio/unexport
