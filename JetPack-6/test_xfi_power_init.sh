@@ -34,6 +34,5 @@ function run_gpioset_out {
 
 XFI_PWR_OFF=`gpiofind "PY.07"`
 
-#run_gpioset_out $XFI_PWR_OFF 0
-gpioset $XFI_PWR_OFF=0
+run_gpioset_out $XFI_PWR_OFF 0
 
